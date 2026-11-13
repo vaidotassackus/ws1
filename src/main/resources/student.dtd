@@ -1,0 +1,12 @@
+<!ELEMENT student (name, age, averageGrade, active, middleInitial, subjects)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT averageGrade (#PCDATA)>
+<!ELEMENT active (#PCDATA)>
+<!ELEMENT middleInitial (#PCDATA)>
+<!ELEMENT subjects (subject+)>
+<!ELEMENT subject (code, title, credits, passed)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT credits (#PCDATA)>
+<!ELEMENT passed (#PCDATA)>

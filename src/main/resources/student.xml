@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+<student>
+    <name>Jonas Jonaitis</name>
+    <age>21</age>
+    <averageGrade>8.7</averageGrade>
+    <active>true</active>
+    <middleInitial>J</middleInitial>
+    <subjects>
+        <subject><code>MAT101</code><title>Matematika</title><credits>6</credits><passed>true</passed></subject>
+        <subject><code>INF101</code><title>Programavimo pagrindai</title><credits>6</credits><passed>true</passed></subject>
+        <subject><code>WEB101</code><title>Žiniatinklio technologijos</title><credits>5</credits><passed>true</passed></subject>
+        <subject><code>DB101</code><title>Duomenų bazės</title><credits>5</credits><passed>true</passed></subject>
+        <subject><code>NET101</code><title>Kompiuterių tinklai</title><credits>5</credits><passed>true</passed></subject>
+        <subject><code>OS101</code><title>Operacinės sistemos</title><credits>5</credits><passed>true</passed></subject>
+        <subject><code>ALG101</code><title>Algoritmai</title><credits>6</credits><passed>true</passed></subject>
+        <subject><code>SEC101</code><title>Informacijos sauga</title><credits>4</credits><passed>false</passed></subject>
+        <subject><code>ENG101</code><title>Anglų kalba</title><credits>3</credits><passed>true</passed></subject>
+        <subject><code>PHY101</code><title>Fizika</title><credits>5</credits><passed>true</passed></subject>
+    </subjects>
+</student>

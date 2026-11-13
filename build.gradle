@@ -1,0 +1,33 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.5'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.13.1'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'lt.example.xmltask.DemoApplication'
+}
+
+tasks.named('test', Test) {
+    useJUnitPlatform()
+}
+
+tasks.named('javadoc', Javadoc) {
+    destinationDir = file('docs/javadoc')
+    options.encoding = 'UTF-8'
+    options.addStringOption('Xdoclint:all', '-quiet')
+}
